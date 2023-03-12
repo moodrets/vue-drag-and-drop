@@ -1,0 +1,55 @@
+.app-action-icon {
+    cursor: pointer;
+    flex: none;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--app-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--app-line-accent-light);
+    color: var(--app-text-accent-light);
+    transition: all 0.2s ease-in-out;
+
+    .svg-icon {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    + * {
+        margin-left: var(--app-spacing-xs);
+    }
+
+    &--expand {
+        background: var(--app-bg-accent-light);
+        color: var(--app-text-light);
+        border-color: var(--app-line-accent-light);
+
+        .svg-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        &.is-active {
+            background: var(--app-bg-light);
+            color: var(--app-text-accent-light);
+
+            .svg-icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &--more {
+        color: var(--app-text-accent);
+
+        .svg-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &.is-active {
+            background: var(--app-bg-accent-light);
+            color: var(--app-text-light);
+        }
+    }
+}

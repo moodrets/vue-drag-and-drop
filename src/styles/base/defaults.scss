@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Acrom', sans-serif;
+    overflow-y: scroll;
+    background: var(--app-bg-body);
+}
+
+.container {
+    max-width: var(--app-container-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

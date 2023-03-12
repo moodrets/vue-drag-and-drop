@@ -1,0 +1,14 @@
+.app-debug-panel {
+    width: 240px;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    border-right: 4px solid var(--app-line-accent-light);
+    box-shadow: var(--app-dropdown-shadow);
+    background: var(--app-bg-light);
+    padding: var(--app-spacing-md);
+}
