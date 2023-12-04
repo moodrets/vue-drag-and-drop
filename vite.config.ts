@@ -7,11 +7,12 @@ import * as url from 'url'
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({mode}) => ({
+    base: mode === 'development' ? '/' : '/vue-drag-and-drop/',
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './src'),
+            "@": path.resolve(__dirname, 'src')
         },
     },
     plugins: [vue(), tsconfigPaths()],
-})
+}))

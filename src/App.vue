@@ -3,5 +3,5 @@
 </template>
 
 <script setup lang="ts">
-import TreatList from './components/treat/TreatList.vue'
+import TreatList from '@/components/treat/TreatList.vue'
 </script>

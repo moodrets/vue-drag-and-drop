@@ -7,7 +7,9 @@
 </template>
 
 <script lang="ts" setup>
-const svgSpritePath = '/svg-sprite.svg'
+import { routerPath } from '@/utils/routerPath'
+
+const svgSpritePath = `${routerPath}svg-sprite.svg`
 
 defineProps({
     name: String,

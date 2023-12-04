@@ -1,1 +1,1 @@
-export const routerPath = import.meta.env.MODE === 'development' ? '/' : '/front-osvetim/'
+export const routerPath = import.meta.env.MODE === 'development' ? '/' : '/vue-drag-and-drop/'
