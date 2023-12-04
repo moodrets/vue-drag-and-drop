@@ -79,10 +79,10 @@
 
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
-import SvgIcon from '../common/SvgIcon.vue'
-import { ITreat, ITreatEmitData } from 'types/TreatTypes'
-import { DropdownDirectiveClickConfig } from '../../directives/Dropdown'
-import { treatDragHandler } from '../../data/DragHandler'
+import SvgIcon from '@/components/common/SvgIcon.vue'
+import { ITreat, ITreatEmitData } from '@/types/TreatTypes'
+import { DropdownDirectiveClickConfig } from '@/directives/Dropdown'
+import { treatDragHandler } from '@/data/DragHandler'
 
 interface ComponentProps {
     parentIndex: number

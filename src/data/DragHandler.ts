@@ -1,4 +1,4 @@
-import { ITreat, ITreatEmitData } from 'types/TreatTypes'
+import { ITreat, ITreatEmitData } from '@/types/TreatTypes'
 
 let dragInfo: any = {}
 

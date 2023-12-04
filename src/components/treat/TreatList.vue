@@ -22,11 +22,11 @@
 </template>
 
 <script setup lang="ts">
-import TreatItem from './TreatItem.vue'
-import { treatsList } from '../../data/InitialData'
-import { ITreat, ITreatEmitData } from 'types/TreatTypes'
 import { reactive, ref } from 'vue'
-import { treatDragHandler } from '../../data/DragHandler'
+import TreatItem from '@/components/treat/TreatItem.vue'
+import { treatsList } from '@/data/InitialData'
+import { ITreat, ITreatEmitData } from '@/types/TreatTypes'
+import { treatDragHandler } from '@/data/DragHandler'
 
 const reactiveTreatList = reactive<ITreat[]>(treatsList)
 const parentRef = ref<HTMLElement>()
