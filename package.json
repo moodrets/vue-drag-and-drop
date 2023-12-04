@@ -5,8 +5,10 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
+        "preview": "vite preview",
         "build": "vue-tsc && vite build",
-        "preview": "vite preview"
+        "copy-404": "cd dist && cp index.html 404.html && cd ..",
+        "deploy": "vue-tsc && vite build && npm run copy-404 && gh-pages -d dist"
     },
     "dependencies": {
         "vite-tsconfig-paths": "^4.0.5",
@@ -15,6 +17,7 @@
     "devDependencies": {
         "@types/node": "^18.15.0",
         "@vitejs/plugin-vue": "^4.0.0",
+        "gh-pages": "^6.1.0",
         "sass": "^1.58.3",
         "typescript": "^4.9.3",
         "vite": "^4.1.0",
